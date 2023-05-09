@@ -1,7 +1,12 @@
 import telegram, logging, functions, dotenv, os
-from telegram.ext import ApplicationBuilder, ContextTypes, CommandHandler, filters, MessageHandler
+from telegram.ext import (
+        ApplicationBuilder,
+        ContextTypes,
+        CommandHandler,
+        filters,
+        MessageHandler 
+        )
 from telegram import Update, MessageEntity
-from tgvmax.py import Monitor
 
 
 #Configure a logs template
@@ -32,14 +37,7 @@ if __name__ == '__main__':
 
     application.run_polling()
 
-    monitor = Monitor()
-    while true:
-        for research in Monitor().listResearch:
-            i
-        application.bot.send_message(PRIVATECHATID, "Nouveau train disponible !\n
-                                    Date : " + result.date + "\n
-                                    Départ : " + result.origine + "\n
-                                    Destination : " + result.destination)
+   
 
 
    
